@@ -1,0 +1,59 @@
+{
+  "name": "athlios-test-work",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "flow-bin": "0.91.0",
+    "immutable": "^4.0.0-rc.12",
+    "lint-staged": "8.1.1",
+    "lodash": "4.17.11",
+    "moment": "2.24.0",
+    "npm-run-all": "4.1.5",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "react-redux": "6.0.0",
+    "react-scripts": "2.1.3",
+    "redux": "4.0.1",
+    "redux-actions": "2.6.4",
+    "redux-devtools-extension": "2.13.7",
+    "redux-immutable": "4.0.0",
+    "redux-thunk": "2.3.0",
+    "reselect": "4.0.0",
+    "styled-components": "4.1.3"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:lint:js": "eslint --ext=js --ext=jsx .",
+    "test:lint": "run-s test:lint:**",
+    "test:unit": "react-scripts test --env=jsdom",
+    "test": "run-s test:**",
+    "eject": "react-scripts eject",
+    "flow": "flow"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "react-app"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": false,
+      "react/destructuring-assignment": false
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "connect-api-mocker": "1.4.0",
+    "eslint": "5.6.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.0",
+    "eslint-plugin-react": "7.12.4"
+  }
+}
